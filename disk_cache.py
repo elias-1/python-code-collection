@@ -8,7 +8,7 @@ try:
     import cPickle as pickle
 except ImportError:
     import pickle
-from link_crawler import link_crawler
+from link_crawler2 import link_crawler
 
 
 """Drawback
