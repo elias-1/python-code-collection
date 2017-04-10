@@ -30,10 +30,10 @@ class MongoCache:
     """
     def __init__(self, client=None, expires=timedelta(days=30)):
         """
-        client: mongo database client
+        serving_client: mongo database serving_client
         expires: timedelta of amount of time before a cache entry is considered expired
         """
-        # if a client object is not passed 
+        # if a serving_client object is not passed
         # then try connecting to mongodb at the default localhost port 
         self.client = MongoClient('localhost', 27017) if client is None else client
         #create collection to store cached webpages,
